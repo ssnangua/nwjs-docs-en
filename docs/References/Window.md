@@ -321,6 +321,9 @@ Close the devtools window.
 Enumerate the printers in the system. The callback function will receive an array of JSON objects for the printer information. The device name of the JSON object can be used as parameter in `nw.Window.print()`.
 
 ## win.isDevToolsOpen()
+```javascript
+nw.Window.isOpenDevTools((status) => console.log(status))
+```
 
 !!! note
     This API is only available on SDK build flavor.
@@ -387,7 +390,7 @@ For platforms that support multiple workspaces (currently Mac OS X and Linux), t
 
 ## win.canSetVisibleOnAllWorkspaces() (Mac and Linux)
 
-Returns a a boolean indicating if the platform (currently Mac OS X and Linux) support Window API method `setVisibleOnAllWorkspace(Boolean)`.
+Returns a `boolean` indicating if the platform (currently Mac OS X and Linux) supports `win.setVisibleOnAllWorkspace(boolean)`.
 
 ## win.setPosition(position)
 
